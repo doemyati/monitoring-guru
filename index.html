@@ -14,7 +14,7 @@ const SCHEDULE=[{"day":"Senin","time":"07.45 - 08.25","teacher":"Riswanto, S.Si.
 const STATUSES=['Belum dicek','Hadir','Terlambat','Tidak hadir','Izin','Tugas lain'];
 const $=id=>document.getElementById(id);
 const storageKey='smpit_baitul_muslim_monitor_v1';
-const API_URL='https://script.google.com/macros/s/AKfycbxau6nmZ2tTrZl8Q_y7kdy8VauQg86ieoEbFA0Ap0P2wCAvX6kWd67mKkFwwhu9oarl/exec';
+const API_URL='https://script.google.com/macros/s/AKfycbxyqO7WkCWuTyfgBXbl0za1RoD6glQq85EZICbsukovtq0OFxYiZGN0z3bNjF5z4alYLQ/exec';
 let records={};try{records=JSON.parse(localStorage.getItem(storageKey)||'{}')}catch(e){records={}}
 let syncBusy=false;
 function setSyncStatus(message,isError=false){const el=$('syncStatus');if(el){el.textContent=message;el.style.color=isError?'#a32636':'#24557f';}}
